@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aditi Roy — Ph.D. Research Scholar in Geography, specializing in hydro-geomorphology, watershed management, sediment dynamics, remote sensing and geospatial analysis.">
+  <title>Aditi Roy | Geomorphology & Hydrology Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#14201d; --muted:#65736f; --paper:#f7f5ef; --white:#fff;
+      --green:#1e5a4b; --green2:#2e806a; --sage:#dce9e2;
+      --sand:#e9dfc9; --line:#d9ded9; --accent:#b87943;
+      --shadow:0 18px 50px rgba(20,32,29,.09); --radius:24px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1160px,92%);margin:auto}
+    nav{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(217,222,217,.8)}
+    nav .wrap{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:700;letter-spacing:.04em}.brand span{color:var(--green)}
+    .navlinks{display:flex;gap:26px;font-size:.9rem;color:var(--muted)}
+    .navlinks a:hover{color:var(--green)}
+    .hero{padding:86px 0 72px;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:var(--sage);right:-180px;top:-160px;opacity:.65;z-index:-1}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
+    .eyebrow{color:var(--green);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+    h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.08;margin:0}
+    h1{font-size:clamp(3.1rem,7vw,6.2rem);margin:16px 0 22px;letter-spacing:-.04em}
+    .hero p{font-size:1.14rem;color:var(--muted);max-width:680px}
+    .chips{display:flex;flex-wrap:wrap;gap:9px;margin:26px 0}
+    .chip{padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.55);font-size:.82rem}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;font-weight:700;font-size:.9rem}
+    .btn.primary{background:var(--green);color:white}.btn.secondary{border:1px solid var(--green);color:var(--green)}
+    .portrait-card{background:var(--white);padding:14px;border-radius:30px;box-shadow:var(--shadow);transform:rotate(2deg)}
+    .portrait-card img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:20px;display:block}
+    .caption{padding:15px 8px 4px;color:var(--muted);font-size:.8rem}
+    section{padding:88px 0;border-top:1px solid var(--line)}
+    .section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:36px}
+    .section-head h2{font-size:clamp(2.2rem,4vw,3.6rem)}
+    .section-head p{max-width:520px;color:var(--muted);margin:0}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:55px}
+    .lead{font-size:1.35rem;color:var(--green);line-height:1.45}
+    .facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .fact{padding:20px;background:white;border:1px solid var(--line);border-radius:18px}
+    .fact strong{display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:5px}
+    .research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .research-card{background:white;border:1px solid var(--line);border-radius:22px;padding:27px;min-height:225px;transition:.25s}
+    .research-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .num{font-size:.78rem;color:var(--accent);font-weight:700;letter-spacing:.1em}
+    .research-card h3{font-size:1.55rem;margin:18px 0 10px}.research-card p{color:var(--muted);font-size:.92rem}
+    .timeline{display:grid;gap:14px}
+    .item{display:grid;grid-template-columns:160px 1fr;gap:30px;padding:23px 0;border-bottom:1px solid var(--line)}
+    .date{color:var(--green);font-weight:700;font-size:.9rem}.item h3{font-size:1.35rem;margin-bottom:5px}.item p{margin:0;color:var(--muted)}
+    .pub{padding:23px 0;border-bottom:1px solid var(--line)}
+    .pub h3{font-family:"DM Sans";font-size:1.05rem;font-weight:700;line-height:1.45}
+    .pub .meta{color:var(--muted);font-size:.88rem;margin-top:7px}.pub a{color:var(--green);font-weight:700}
+    .grants{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .grant{padding:22px;border-radius:20px;background:var(--green);color:white;min-height:150px}
+    .grant small{opacity:.75}.grant strong{display:block;margin-top:15px;font-size:1rem}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:10px 14px;background:white;border:1px solid var(--line);border-radius:12px}
+    .contact{background:var(--green);color:white;border-radius:30px;padding:54px}
+    .contact h2{font-size:3rem}.contact p{color:#dce9e2;max-width:650px}
+    .contact-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.contact-links a{padding:11px 16px;border:1px solid rgba(255,255,255,.3);border-radius:999px}
+    footer{padding:30px 0;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:850px){
+      .navlinks{display:none}.hero-grid,.about{grid-template-columns:1fr}.research-grid,.grants{grid-template-columns:1fr 1fr}
+      .portrait-card{max-width:380px;margin:auto}.hero{padding-top:55px}.section-head{display:block}.section-head p{margin-top:15px}
+    }
+    @media(max-width:600px){
+      .research-grid,.grants,.facts{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:5px}
+      .contact{padding:35px 25px}.contact h2{font-size:2.4rem}footer{display:block}
+    }
+  </style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#">ADITI <span>ROY</span></a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#grants">Grants</a><a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">Geomorphology · Hydrology · Geospatial Science</div>
+    <h1>Aditi<br>Roy</h1>
+    <p>Ph.D. Research Scholar in Geography at the Delhi School of Economics, University of Delhi, studying how hydro-climatic variability, tectonics, landscape structure and human activity shape rivers, sediment dynamics and watershed hazards.</p>
+    <div class="chips">
+      <span class="chip">Hydro-geomorphology</span><span class="chip">River Basin Analysis</span><span class="chip">Sediment Dynamics</span><span class="chip">Remote Sensing & GIS</span>
+    </div>
+    <div class="buttons">
+      <a class="btn primary" href="#research">Explore my research ↓</a>
+      <a class="btn secondary" href="mailto:aroy@geography.du.ac.in">Get in touch</a>
+    </div>
+  </div>
+  <div class="portrait-card">
+    <img src="assets/aditi-roy.jpg" alt="Aditi Roy">
+    <div class="caption">Ph.D. Research Scholar · Department of Geography · University of Delhi</div>
+  </div>
+</div></header>
+
+<section id="about"><div class="wrap">
+  <div class="section-head"><h2>About</h2><p>A research profile connecting physical geography, geospatial technologies and environmental change.</p></div>
+  <div class="about">
+    <div>
+      <p class="lead">My work investigates the coupled processes that shape river basins—from tectonic and litho-structural controls to climate variability and anthropogenic pressures.</p>
+      <p>My doctoral research focuses on the hydrogeomorphic evolution of the Brahmani River Basin in eastern India, with particular interests in landscape evolution, erosion, sediment connectivity and sustainable watershed management.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><strong>Current role</strong>Ph.D. Research Scholar</div>
+      <div class="fact"><strong>Institution</strong>Delhi School of Economics, University of Delhi</div>
+      <div class="fact"><strong>Doctoral study</strong>January 2022 – Present</div>
+      <div class="fact"><strong>ORCID</strong><a href="https://orcid.org/0000-0002-6631-7705">0000-0002-6631-7705 ↗</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="research"><div class="wrap">
+  <div class="section-head"><h2>Research</h2><p>Key themes across my doctoral research and broader scientific interests.</p></div>
+  <div class="research-grid">
+    <article class="research-card"><div class="num">01 / RIVER BASINS</div><h3>Hydro-geomorphic evolution</h3><p>River longitudinal profiles, landscape evolution and the influence of tectonic and litho-structural controls on channel form.</p></article>
+    <article class="research-card"><div class="num">02 / SEDIMENT</div><h3>Erosion & connectivity</h3><p>Soil erosion, sediment dynamics, sediment delivery and connectivity assessment using process-based and geospatial approaches.</p></article>
+    <article class="research-card"><div class="num">03 / CLIMATE</div><h3>Hydro-climatic variability</h3><p>Understanding how rainfall variability and changing environmental conditions influence watershed processes and hazards.</p></article>
+    <article class="research-card"><div class="num">04 / HUMAN IMPACT</div><h3>Anthropogenic controls</h3><p>Assessing how land-use change and human interventions modify geomorphic processes and sediment regimes.</p></article>
+    <article class="research-card"><div class="num">05 / GEOINFORMATICS</div><h3>Remote sensing & GIS</h3><p>Integrating satellite data, DEMs, GIS, Google Earth Engine and spatial modelling for river-basin research.</p></article>
+    <article class="research-card"><div class="num">06 / APPLICATION</div><h3>Watershed management</h3><p>Translating geomorphic and hydrological understanding into evidence for sustainable watershed planning and hazard assessment.</p></article>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="section-head"><h2>Education</h2><p>Academic training in geography, geomorphology and geospatial science.</p></div>
+  <div class="timeline">
+    <div class="item"><div class="date">2022 — PRESENT</div><div><h3>Doctor of Philosophy (Ph.D.)</h3><p>Department of Geography, Delhi School of Economics, University of Delhi, New Delhi.</p></div></div>
+    <div class="item"><div class="date">2017 — 2019</div><div><h3>Master of Science (M.Sc.)</h3><p>Department of Geography, University of Calcutta. First class · Specialization: Geomorphology.</p></div></div>
+    <div class="item"><div class="date">2014 — 2017</div><div><h3>Bachelor of Science (B.Sc.)</h3><p>Ramsaday College, University of Calcutta. First class · Geography (H), Anthropology, Economics.</p></div></div>
+  </div>
+</div></section>
+
+<section id="publications"><div class="wrap">
+  <div class="section-head"><h2>Selected publications</h2><p>Peer-reviewed and conference research spanning geomorphology, sediment dynamics and environmental change.</p></div>
+  <div class="pub"><h3>Roy, A., Patel, P. P., Sen, A. (2024). Unravelling litho-structural and tectonic influences on geomorphic and river longitudinal profile character in the Brahmani River Basin of eastern India.</h3><div class="meta"><em>Geomorphology</em>, 109574. <a href="https://doi.org/10.1016/j.geomorph.2024.109574">DOI ↗</a></div></div>
+  <div class="pub"><h3>Das, S., Jadhav, H., Roy, A., Scaringi, G. (2025). Sediment load decline and increased erosion linked to human activities in the Cauvery Delta, India.</h3><div class="meta"><em>CATENA</em>, 109486. <a href="https://doi.org/10.1016/j.catena.2025.109486">DOI ↗</a></div></div>
+  <div class="pub"><h3>Roy, A., Patel, P. P., Sen, A. (2025). Geomorphic, Litho-Tectonic, and Anthropogenic Controls on Soil Loss and Sediment Dynamics in the Brahmani River Basin, India.</h3><div class="meta"><em>IEEE International Geoscience and Remote Sensing Symposium</em>, 3274–3278. <a href="https://doi.org/10.1109/IGARSS55030.2025.11243979">DOI ↗</a></div></div>
+  <div class="pub"><h3>Sarkar, S., Roy, A., Bhattacharjee, S., Shit, P. K., Bera, B. (2021). Effects of COVID-19 lockdown and unlock on health of Bhutan-India-Bangladesh trans-boundary rivers.</h3><div class="meta"><em>Journal of Hazardous Materials Advances</em>, 4, 100030. <a href="https://doi.org/10.1016/j.hazadv.2021.100030">DOI ↗</a></div></div>
+  <div class="pub"><h3>Selected manuscripts under review</h3><div class="meta">Geomorphic signatures of active mountain building in Darjeeling–Bhutan Himalayan basins · Simulating future soil loss and sediment connectivity · ENSO-driven interannual variability of soil loss and sediment connectivity in tropical Indian catchments · Probabilistic assessment of dam-adjusted sediment connectivity and soil erosion hotspots.</div></div>
+</div></section>
+
+<section id="grants"><div class="wrap">
+  <div class="section-head"><h2>Grants & recognition</h2><p>Competitive fellowships, travel grants and research support.</p></div>
+  <div class="grants">
+    <div class="grant"><small>2020</small><strong>UGC NET (JRF)</strong><span>Junior Research Fellowship</span></div>
+    <div class="grant"><small>2020</small><strong>WB-SET</strong><span>West Bengal State Eligibility Test</span></div>
+    <div class="grant"><small>2024</small><strong>DST-SERB (ANRF)</strong><span>International Travel Grant for Young Scientist</span></div>
+    <div class="grant"><small>2025</small><strong>IEEE-GRSS</strong><span>IGARSS-25 International Travel Grant</span></div>
+    <div class="grant"><small>2025–26</small><strong>AGU</strong><span>Student travel grants and committee service</span></div>
+    <div class="grant"><small>2026</small><strong>ICSSR</strong><span>Travel Grant for AAG Annual Meeting 2026</span></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="section-head"><h2>Conferences & training</h2><p>International and national scientific meetings, field experiences and technical training.</p></div>
+  <div class="timeline">
+    <div class="item"><div class="date">2025</div><div><h3>IEEE IGARSS-2025 · Brisbane, Australia</h3><p>45th IEEE International Geoscience and Remote Sensing Symposium; IEEE IGARSS Summer School at Griffith University, Gold Coast — Third Prize.</p></div></div>
+    <div class="item"><div class="date">2024</div><div><h3>MedGU-24 · Barcelona, Spain</h3><p>Mediterranean Geosciences Union Annual Meeting, followed by Eastern Pyrenees geology and geomorphology field trip across Spain, France and Andorra.</p></div></div>
+    <div class="item"><div class="date">2024</div><div><h3>Geospatial Technologies · DTU</h3><p>21-day NGP-DST Summer School on Geospatial Technologies — Level 2.</p></div></div>
+    <div class="item"><div class="date">2025</div><div><h3>Hydrological & flood modelling</h3><p>Training on Hydrological Modelling using Climate Change Data at NIT Rourkela; training on open-source flood modelling and risk assessment at NIH Roorkee.</p></div></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="section-head"><h2>Methods & tools</h2><p>A geospatial and quantitative toolkit for earth-surface research.</p></div>
+  <div class="skills">
+    <span class="skill">MATLAB</span><span class="skill">Python</span><span class="skill">Google Earth Engine</span><span class="skill">ArcGIS Pro</span><span class="skill">R</span><span class="skill">QGIS</span><span class="skill">Origin</span><span class="skill">SPSS</span><span class="skill">ERDAS</span><span class="skill">ENVI</span><span class="skill">TerrSet</span><span class="skill">InVEST</span>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+  <div class="eyebrow" style="color:#b7d6ca">COLLABORATION · RESEARCH · ACADEMIC NETWORKING</div>
+  <h2>Let's connect.</h2>
+  <p>I welcome conversations about geomorphology, river-basin science, geospatial methods, sediment dynamics, collaborative research and academic opportunities.</p>
+  <div class="contact-links">
+    <a href="mailto:aroy@geography.du.ac.in">aroy@geography.du.ac.in</a>
+    <a href="https://orcid.org/0000-0002-6631-7705">ORCID ↗</a>
+  </div>
+</div></div></section>
+
+<footer><div class="wrap"><span>© 2026 Aditi Roy</span><span>Hydro-geomorphology · Geography · Geospatial Science</span></div></footer>
+</body>
+</html>
