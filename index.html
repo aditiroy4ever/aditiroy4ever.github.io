@@ -21,7 +21,16 @@
     .wrap{width:min(1160px,92%);margin:auto}
     nav{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(217,222,217,.8)}
     nav .wrap{height:72px;display:flex;align-items:center;justify-content:space-between}
-    .brand{font-weight:700;letter-spacing:.04em}.brand span{color:var(--green)}
+    .brand{
+  display:flex;
+  align-items:center;
+}
+
+.site-logo{
+  height:48px;
+  width:auto;
+  display:block;
+}
     .navlinks{display:flex;gap:26px;font-size:.9rem;color:var(--muted)}
     .navlinks a:hover{color:var(--green)}
     .hero{padding:86px 0 72px;position:relative;overflow:hidden}
@@ -79,7 +88,9 @@
 </head>
 <body>
 <nav><div class="wrap">
-  <a class="brand" href="#">ADITI <span>ROY</span></a>
+  <a class="brand" href="#">
+  <img src="aditi-roy-logo.png" alt="Aditi Roy" class="site-logo">
+</a>
   <div class="navlinks">
     <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#grants">Grants</a><a href="#contact">Contact</a>
   </div>
